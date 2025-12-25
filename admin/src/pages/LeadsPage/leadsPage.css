@@ -1,0 +1,15 @@
+.leads {
+  flex: 0.8;
+  height: 100%;
+}
+.leads__content {
+  padding: 20px;
+}
+.leads__btn {
+  display: flex;
+  justify-content: space-between;
+}
+.leads__btn--wrapper {
+  display: flex;
+  gap: 10px;
+}

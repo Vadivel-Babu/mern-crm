@@ -1,0 +1,37 @@
+.checkbox__label {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.checkbox__label span {
+  position: absolute;
+  border: 1px solid #d0d5dd;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  display: block;
+  cursor: pointer;
+}
+.checkbox__label span::after {
+  position: absolute;
+  content: " ";
+  width: 6px;
+  height: 12px;
+  left: 5px;
+  border: solid #747474;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked + span::after {
+  opacity: 1;
+}

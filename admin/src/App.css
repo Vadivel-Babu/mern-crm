@@ -1,0 +1,7 @@
+.app {
+  display: flex;
+  height: 100vh;
+}
+.pages {
+  flex: 0.7;
+}

@@ -1,0 +1,11 @@
+.employee {
+  flex: 0.8;
+  height: 100%;
+}
+.employee__content {
+  padding: 20px;
+}
+.employee__btns {
+  display: flex;
+  justify-content: space-between;
+}

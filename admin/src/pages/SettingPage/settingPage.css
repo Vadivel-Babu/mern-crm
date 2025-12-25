@@ -1,0 +1,37 @@
+.setting {
+  flex: 0.8;
+  height: 100%;
+}
+.setting__content {
+  padding: 20px;
+}
+.setting__input {
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.setting__title {
+  border-bottom: 1px solid var(--border-color);
+  padding: 3px 6px;
+}
+.setting__title > h3 {
+  color: #747474;
+  font-family: var(--poppins-font);
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+  width: max-content;
+  padding: 0 10px;
+}
+.setting__title > h3::before {
+  content: "";
+  background-color: #747474;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 13%;
+  bottom: -3px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}

@@ -1,0 +1,29 @@
+.edittooltip {
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border: 8px;
+  width: max-content;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  gap: 5px;
+  z-index: 2;
+  box-shadow: 2px 2px 5px rgb(161, 161, 161);
+}
+.edittooltip__btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.edittooltip__btn:hover {
+  background-color: #e6e6e6;
+}

@@ -1,0 +1,11 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.breadcrumb__link {
+  text-decoration: none;
+  color: #616161;
+  font-size: 18px;
+  font-weight: 500;
+}

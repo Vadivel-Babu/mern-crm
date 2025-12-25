@@ -1,0 +1,91 @@
+.table__wrapper {
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+
+  margin-top: 20px;
+}
+.employeetable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.employeetable th {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px;
+}
+.employeetable td {
+  padding: 10px;
+}
+.employee__name-head {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.employee__name-head,
+.employee__id-head {
+  text-align: left;
+}
+.employee__leads-head {
+  text-align: center;
+}
+.action {
+  visibility: hidden;
+}
+.row {
+  margin-top: 100px;
+  border-top: 2px solid #eaecf0;
+  position: relative;
+}
+.row.active {
+  background-color: #f4f4f4;
+}
+.employee__card-cell {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.employee__id {
+  font-size: 12px;
+  color: #091e42;
+  font-weight: 500;
+  background-color: #f5f6f7;
+  border-radius: 16px;
+  text-align: center;
+  padding: 3px 5px;
+  width: max-content;
+}
+.employee__leads {
+  color: #616161;
+  font-family: var(--rem-font);
+  text-align: center;
+}
+.badge {
+  color: #12b76a;
+  background-color: #ecfdf3;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-transform: capitalize;
+  width: max-content;
+  padding: 2px 8px;
+  margin: 0 auto;
+}
+.dot {
+  background-color: #12b76a;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.status {
+  color: #12b76a;
+  font-size: 12px;
+  font-weight: 500;
+}
+.action__btn {
+  border: 0;
+  background-color: transparent;
+  text-align: center;
+  width: 100%;
+}
