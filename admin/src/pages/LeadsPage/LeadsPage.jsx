@@ -1,9 +1,13 @@
+import { useState } from "react";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Button from "../../components/Button/Button";
+import LeadsTable from "../../components/LeadsTable/LeadsTable";
 import SearchBox from "../../components/SearchBox/SearchBox";
 import "./leadsPage.css";
+import CSVModel from "../../components/CSVmodel/CSVModel";
 
 const LeadsPage = () => {
+  const [isCsvModel, setIsCsvModel] = useState(false);
   return (
     <div className="leads">
       <SearchBox />
@@ -17,9 +21,13 @@ const LeadsPage = () => {
             />
             <Button
               text="Add CSV"
-              handleClick={() => console.log("leads csv")}
+              handleClick={() => setIsCsvModel(!isCsvModel)}
             />
           </div>
+        </div>
+        <div className="leads__table-content">
+          <LeadsTable />
+          {isCsvModel && <CSVModel close={() => setIsCsvModel(false)} />}
         </div>
       </div>
     </div>
