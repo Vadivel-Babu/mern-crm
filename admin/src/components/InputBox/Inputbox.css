@@ -5,7 +5,8 @@
 .inputbox > label {
   color: #5e5e5e;
   font-family: var(--poppins-font);
-  font-size: 18px;
+  font-size: 17px;
+  text-transform: capitalize;
 }
 .input {
   border: 1px solid #3e3e3e;

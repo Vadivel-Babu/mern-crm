@@ -1,16 +1,16 @@
 import "./inputbox.css";
 
-const InputBox = ({ label = "", value, handleChange }) => {
+const InputBox = ({ label = "", value = "", handleChange, type = "text" }) => {
   return (
     <div className="inputbox">
       <label htmlFor="">{label}</label>
       <br />
       <input
         className="input"
-        type="text"
-        name="name"
+        type={type}
+        name={label}
         value={value}
-        placeholder="Enter name"
+        placeholder={`Enter ${label}`}
         onChange={handleChange}
       />
     </div>

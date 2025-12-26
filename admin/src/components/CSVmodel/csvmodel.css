@@ -26,11 +26,18 @@
   height: 210px;
   border-radius: 8px;
   margin-top: 10px;
+}
+.csvmodel__body--upload,
+.csvmodel__body--verify {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  height: 100%;
+}
+.csvmodel__body--verify > p {
+  font-size: 14px;
 }
 .upload {
   display: flex;

@@ -14,6 +14,7 @@ const Button = ({ handleClick, text = "button" }) => {
     fontFamily: "var(--poppins-font)",
     cursor: "pointer",
     transition: "background-color 0.3s ease",
+    minWidth: "190px",
   };
   const btnHoverStyle = {
     backgroundColor: "#f2f2f2",

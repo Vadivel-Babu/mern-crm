@@ -1,0 +1,22 @@
+.leadsmodel {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white-color);
+  padding: 20px;
+  z-index: 2;
+  width: 610px;
+  border-radius: 16px;
+  border: 1px solid #655a5a;
+}
+.leadsmodel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leadsmodel__header > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0b0b0b;
+}
