@@ -1,0 +1,20 @@
+.inputbox {
+  margin-top: 15px;
+}
+
+.inputbox > label {
+  color: #5e5e5e;
+  font-family: var(--poppins-font);
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.input {
+  border: 1px solid #3e3e3e;
+  border-radius: 11px;
+  padding: 15px 20px;
+  width: 500px;
+  font-size: 16px;
+}
+.input:focus {
+  outline: none;
+}

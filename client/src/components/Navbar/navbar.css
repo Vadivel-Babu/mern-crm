@@ -1,0 +1,23 @@
+.navbar {
+  flex: 0.1;
+  border-top: 1px solid #eae9f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-family: var(--rem);
+}
+.nav__btn-active {
+  color: var(--primary-color);
+}
