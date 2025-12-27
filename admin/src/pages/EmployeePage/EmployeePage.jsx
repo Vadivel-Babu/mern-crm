@@ -9,6 +9,7 @@ import EmployeeModel from "../../components/EmployeeModel/EmployeeModel";
 
 const EmployeePage = () => {
   const [isModelOpen, setIsModelOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
 
   return (
     <div className="employee">
@@ -22,7 +23,11 @@ const EmployeePage = () => {
           />
         </div>
         <EmployeeTable />
-        <Pagination />
+        <Pagination
+          currentPage={currentPage}
+          totalPages={8}
+          setPage={setCurrentPage}
+        />
         {isModelOpen && <EmployeeModel close={() => setIsModelOpen(false)} />}
       </div>
     </div>
