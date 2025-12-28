@@ -1,0 +1,24 @@
+.timingcard {
+  border-radius: 13px;
+  border: 2px solid #d0d0d0;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  font-family: var(--rem);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.timingcard > div {
+  display: flex;
+  gap: 20px;
+}
+.time > p {
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.checkin--btn {
+  border-radius: 10px;
+  border: 1px solid #e4e4e4;
+}

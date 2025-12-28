@@ -1,0 +1,35 @@
+.date {
+  background-color: var(--white-color);
+  padding: 5px;
+  position: absolute;
+  left: -30px;
+  top: 25px;
+  z-index: 1;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 8px;
+}
+.date h3 {
+  color: #42526d;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.date__input {
+  margin-top: 10px;
+}
+.date input {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 5px;
+  width: 123px;
+  text-align: center;
+}
+.date input::placeholder {
+  color: #8a8a8a;
+  font-size: 14px;
+  font-weight: 500;
+}
+.date input:focus {
+  outline: none;
+}

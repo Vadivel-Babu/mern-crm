@@ -1,3 +1,5 @@
 .leadspage {
   flex: 0.8;
+  width: 100%;
+  padding: 20px;
 }
