@@ -6,7 +6,7 @@ const PublicRoute = ({ children }) => {
 
   if (loading) return null; // or loader
 
-  return !isAuth ? <Navigate to="/" replace /> : children;
+  return !isAuth ? <Navigate to="/login" replace /> : children;
 };
 
 export default PublicRoute;

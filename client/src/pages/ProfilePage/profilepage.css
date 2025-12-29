@@ -2,3 +2,19 @@
   flex: 0.8;
   padding: 20px;
 }
+.profile__form-btn {
+  padding: 10px 20px;
+  font-family: var(--poppins);
+  font-weight: 500;
+  font-size: 12px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 0;
+  border-radius: 9px;
+  width: 125px;
+  margin-top: 25px;
+  margin-right: 5px;
+}
+.profile__form-btn.logout-btn {
+  background-color: #e53420;
+}
