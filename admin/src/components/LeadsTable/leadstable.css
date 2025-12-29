@@ -36,7 +36,7 @@
   border-left: 1px solid #8a8585;
 }
 
-tr td:last-child {
+.leadstable__bodyrow tr td:last-child {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 

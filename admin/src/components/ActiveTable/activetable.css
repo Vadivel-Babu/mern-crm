@@ -1,52 +1,40 @@
-.table__wrapper {
+.activetable__wrapper {
   border: 1px solid var(--border-color);
   border-radius: 16px;
-  margin-top: 20px;
+  overflow: hidden;
 }
-.employeetable {
+.tablescroll {
+  height: 300px;
+  overflow-y: auto;
+}
+.activeemployeetable {
   width: 100%;
   border-collapse: collapse;
 }
 
-.employeetable th {
+.activeemployeetable thead tr th {
   font-size: 12px;
   font-weight: 500;
   padding: 10px;
-}
-.employeetable td {
-  padding: 10px;
-  border: 0;
-}
-.employee__name-head {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-.employee__name-head,
-.employee__id-head {
-  text-align: left;
-}
-.employee__leads-head {
-  text-align: center;
-}
-.action {
-  visibility: hidden;
-}
-.row {
-  margin-top: 100px;
-  border-top: 2px solid #eaecf0;
-  position: relative;
-}
-.row.active {
-  background-color: #f4f4f4;
-}
-.employee__card-cell {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
-.employee__id {
+.activeemployeetable td {
+  padding: 10px;
+  border-top: 1px solid var(--border-color);
+  margin-top: 5px;
+}
+.activeemployee__name-head,
+.activeemployee__id-head {
+  text-align: left;
+}
+.activeemployee__leads-head {
+  text-align: center;
+}
+
+.activeemployee__id {
   font-size: 12px;
   color: #091e42;
   font-weight: 500;
@@ -56,7 +44,7 @@
   padding: 3px 5px;
   width: max-content;
 }
-.employee__leads {
+.activeemployee__leads {
   color: #616161;
   font-family: var(--rem-font);
   text-align: center;
@@ -74,6 +62,7 @@
   padding: 2px 8px;
   margin: 0 auto;
 }
+
 .dot {
   background-color: #12b76a;
   width: 8px;
@@ -85,9 +74,20 @@
   font-size: 12px;
   font-weight: 500;
 }
-.action__btn {
-  border: 0;
-  background-color: transparent;
-  text-align: center;
-  width: 100%;
+
+.tablescroll::-webkit-scrollbar {
+  width: 2px;
+}
+
+.tablescroll::-webkit-scrollbar-track {
+  background: none;
+}
+
+.tablescroll::-webkit-scrollbar-thumb {
+  background-color: #c7c7c7;
+  border-radius: 10px;
+}
+
+.tablescroll::-webkit-scrollbar-thumb:hover {
+  background-color: #a3a3a3;
 }
