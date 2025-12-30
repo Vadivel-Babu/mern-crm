@@ -6,6 +6,7 @@ import SearchBox from "../../components/SearchBox/SearchBox";
 import "./leadsPage.css";
 import CSVModel from "../../components/CSVmodel/CSVModel";
 import Leadsmodel from "../../components/Leadsmodel/Leadsmodel";
+import Pagination from "../../components/Pagination/Pagination";
 
 const LeadsPage = () => {
   const [isCsvModel, setIsCsvModel] = useState(false);
@@ -48,6 +49,7 @@ const LeadsPage = () => {
               handleLeadsSave={handleLeadsSave}
             />
           )}
+          <Pagination />
         </div>
       </div>
     </div>
