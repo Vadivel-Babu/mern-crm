@@ -6,7 +6,7 @@ import {
   updateEmployee,
   deleteEmployee,
   bulkDeleteEmployees,
-} from "../controller/employeeController";
+} from "../controller/employeeController.js";
 import { validateEmployeeInput } from "../middleware/validate.js";
 
 const router = express.Router();
