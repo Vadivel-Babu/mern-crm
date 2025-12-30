@@ -1,4 +1,4 @@
-import "./inputbox.css";
+import "./Inputbox.css";
 
 const InputBox = ({ label = "", value = "", handleChange, type = "text" }) => {
   return (
