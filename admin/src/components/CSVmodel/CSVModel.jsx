@@ -1,6 +1,6 @@
 import Closebtn from "../Closebtn/Closebtn";
 import "./csvmodel.css";
-import vector from "../../assets/vector.svg";
+import vector from "../../assets/Vector.svg";
 import upload from "../../assets/upload.svg";
 import download from "../../assets/download.svg";
 import { useState } from "react";
