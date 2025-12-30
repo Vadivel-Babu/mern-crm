@@ -15,47 +15,19 @@ function App() {
     <div className="app">
       <Header />
       <Routes>
-        <Route
+        {/* <Route
           path="/login"
           element={
             <PublicRoute>
               <LoginPage />
             </PublicRoute>
           }
-        />
+        /> */}
 
-        <Route
-          path="/home"
-          element={
-            <ProtectedRoute>
-              <HomePage />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/leads"
-          element={
-            <ProtectedRoute>
-              <LeadsPage />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/schedule"
-          element={
-            <ProtectedRoute>
-              <SchedulePage />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/profile"
-          element={
-            <ProtectedRoute>
-              <ProfilePage />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/leads" element={<LeadsPage />} />
+        <Route path="/schedule" element={<SchedulePage />} />
+        <Route path="/profile" element={<ProfilePage />} />
         <Route path="*" element={"page not found"} />
       </Routes>
       <Navbar />

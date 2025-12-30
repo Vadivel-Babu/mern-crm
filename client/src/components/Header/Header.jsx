@@ -11,7 +11,7 @@ const Header = () => {
       <h1 className="header__title">
         Canova<span>CRM</span>{" "}
       </h1>
-      {pathname === "home" ? (
+      {pathname === "" ? (
         <div className="user__details">
           <h2>Good Morning</h2>
           <h3>Jhon</h3>

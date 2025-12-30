@@ -18,12 +18,10 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <button
-        onClick={() => navigate("/home")}
-        className={
-          pathname === "home" ? "nav__btn nav__btn-active" : "nav__btn"
-        }
+        onClick={() => navigate("/")}
+        className={pathname === "" ? "nav__btn nav__btn-active" : "nav__btn"}
       >
-        <img src={pathname === "home" ? homeActive : home} alt="home" />
+        <img src={pathname === "" ? homeActive : home} alt="home" />
         Home
       </button>
       <button
